@@ -1,5 +1,5 @@
 # Create a Website with Server Side Rendering
-* Create a website consisting of 2 pages
+* Create a website consisting of 2 template views
 	* Homepage -> `/`
 	* Blog Post -> `/blogpost`
 
@@ -23,9 +23,9 @@
 ## Content 
 ### Homepage
 
-2. The homepage should display a list of links with each one linking to the blogpost page but with different url parameters
+2. The homepage should display a list of links with each one linking to the blogpost page but with different url parameters. The list should by dynamically created based on the array.
 > Example:<br>
-> <a href="/blogpost?pos=1">my first blog post</a>
+> `<a href="/blogpost?pos=1">my first blog post</a>`
 
 ### Blog Post
 
