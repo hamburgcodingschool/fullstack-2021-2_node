@@ -1,9 +1,16 @@
 const express = require("express");
+const path = require("path");
 const blogData = require("./data/blogData.json");
 
 const port = 3000;
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, "public")));
+
+console.log(__dirname);
+console.log(path.join(__dirname, "public"));
+
 app.set("view engine", "ejs");
 
 
@@ -34,3 +41,9 @@ app.get("/blogpost", function(req, res) {
 app.listen(port, function() {
     console.log(`Listening on ${port}`);
 });
+
+
+// EXAMPLE
+// add 2 images to the homepage
+// 1 from the internet
+// 1 from the app's filesystem (public folder)
