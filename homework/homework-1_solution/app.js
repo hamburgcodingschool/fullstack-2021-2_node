@@ -43,7 +43,8 @@ app.listen(port, function() {
 });
 
 
-// EXAMPLE
+// EXERCISE
 // add 2 images to the homepage
 // 1 from the internet
 // 1 from the app's filesystem (public folder)
+
