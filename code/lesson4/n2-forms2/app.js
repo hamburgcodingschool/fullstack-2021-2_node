@@ -15,9 +15,22 @@ app.get("/insert", function(req, res) {
     
     // 2 - create a new ejs template for the `insert` route, show the values sent in that page template
 
-    res.send("Thanks!");
+    console.log(req.query.name);
+    console.log(req.query.address);
+    console.log(req.query.city);
+    console.log(req.query.country);
+
+    const values = {
+        name: req.query.name,
+        address: req.query.address,
+        city: req.query.city,
+        country: req.query.country,
+    };
+
+    res.render("insert.ejs", values);
 });
 
 app.listen(port, function() {
     console.log(`Listening on ${port}`);
 });
+
