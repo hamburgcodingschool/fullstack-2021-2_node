@@ -15,8 +15,23 @@
         <li><a href="/blogpost?pos=<%= i %>"><%= blogData[i].title %></a></li>
         <% } %> 
     </ul>
+    <div id="container"></div>
     <h2>And some images:</h2>
-    <img height="300" src="https://www.webwandtattoo.com/de/img/asfs1085-png/folder/products-detalle-png/aufkleber-homer-simpson-luft-nackt.png">
-    <img height="300" src="/images/homer-point.jpg">
+    
+    <img height="300" src="<%= image1 %>">
+    
+    <img height="300" src="<%= image2 %>">
+    
+    <script>
+
+        const x = "<%= blogData[0].image %>";
+
+        const container = document.querySelector("#container");
+
+        for (let i = 0; i < 10; i++) {
+            container.innerHTML += `<p>${i}</p>`;
+        }
+
+    </script>
 </body>
 </html>

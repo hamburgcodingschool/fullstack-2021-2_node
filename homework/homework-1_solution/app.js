@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const blogData = require("./data/blogData.json");
+const homepageData = require("./data/homepageData.json");
 
 const port = 3000;
 
@@ -16,7 +17,9 @@ app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
     const pageData = {
-        "heading": "This is the title of the page...",
+        "heading": homepageData.heading,
+        "image1": homepageData.image1,
+        "image2": homepageData.image2,
         "blogData": blogData
     }
 
