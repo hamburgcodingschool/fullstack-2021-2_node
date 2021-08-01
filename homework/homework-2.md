@@ -1,5 +1,5 @@
 # Create a Website with Server Side Rendering
-* Create a website consisting of 3 pages
+* Create a website consisting of 4 pages
 	* Homepage -> `/`
 	* About -> `/about`
 	* Gallery -> `/gallery`
@@ -34,7 +34,7 @@
 
 7. The absence of the `type` parameter should produce a message instead of a list of images
 
-### Contact Us
+### Contact Us (if you have enough time, focus on the others first)
 
 8. The contact page consists of a form with the following fields `name`, `email`, `subject`, `description`
 9. All contact information should be submitted via `POST` method
