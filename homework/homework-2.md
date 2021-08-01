@@ -36,7 +36,7 @@
 
 ### Contact Us (if you have enough time, focus on the others first)
 
-8. The contact page consists of a form with the following fields `name`, `email`, `subject`, `description`
+8. The contact page consists of a `form` with the following fields `name`, `email`, `subject`, `description`
 9. All contact information should be submitted via `POST` method
 10. After receiving the contact information the server should validate if all fields are present and show either a `thank you for your contact` message or a `invalid contact` message
 11. The contact data itself would then go to a database, but that's for another exercise.
