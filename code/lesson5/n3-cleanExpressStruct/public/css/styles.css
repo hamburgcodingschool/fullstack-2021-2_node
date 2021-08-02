@@ -1,0 +1,11 @@
+body {
+  background-color: lightblue;
+}
+
+.successMessage {
+  background-color: green;
+  color: greenyellow;
+  font-size: 20px;
+  padding: 20px;
+  transition: 400ms;
+}

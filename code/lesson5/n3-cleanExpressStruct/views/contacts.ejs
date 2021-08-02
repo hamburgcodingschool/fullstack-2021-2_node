@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
    <h1>CONTACTS US NOW!</h1>
@@ -20,10 +21,16 @@
     </form>
 
     <% if (showThankYouMessage) { %>
-        <div>
+        <div class="successMessage">
             Thanks for submitting!
         </div> 
     <% } %>
     
+    <script>
+        setTimeout(function() {
+            const successMessage = document.querySelector(".successMessage");
+            successMessage.style.opacity = 0;
+        }, 5000);
+    </script>
 </body>
 </html>

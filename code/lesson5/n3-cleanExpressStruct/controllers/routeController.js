@@ -18,7 +18,7 @@ function contacts(req, res) {
     // Exercise.
     // make sure email, subject and description are not empty
     // if everything is ok say thank you
-    // if a field is missing, say imcomplete form...
+    // if a field is missing, notify the user and ask to submit again.
 
 
     if (req.body.email) {
