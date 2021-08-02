@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: red;
+        }
+
+        #div2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <% if (type==="1") { %>
+    <h2>HERE IS SOMETHING:</h2>
+    <div id="div1">
+        SOMETHING
+    </div>
+    <% } else if (type==="2") { %>
+    <h2>HERE IS SOMETHING ELSE:</h2>
+    <div id="div2">
+        SOMETHING ELSE
+    </div>
+    <% } %>
+</body>
+</html>
