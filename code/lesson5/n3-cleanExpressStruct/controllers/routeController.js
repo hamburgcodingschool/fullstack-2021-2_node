@@ -15,7 +15,13 @@ function contacts(req, res) {
         showThankYouMessage: false
     };
 
-    if (req.body.subject) {
+    // Exercise.
+    // make sure email, subject and description are not empty
+    // if everything is ok say thank you
+    // if a field is missing, say imcomplete form...
+
+
+    if (req.body.email) {
         pageData.showThankYouMessage = contactsService.saveContact(req.body);
     }
 
