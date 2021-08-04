@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", homeController.homepage);
+app.get("/bypopulation", homeController.byPopulation);
 
 app.listen(port, function() {
     console.log(`Listening on ${port}`);

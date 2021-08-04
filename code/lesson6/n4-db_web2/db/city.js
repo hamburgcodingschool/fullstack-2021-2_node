@@ -15,7 +15,16 @@ function getCityByCountryCode(countryCode, callback) {
     });
 }
 
+function getCityByPopulation(minPopulation, callback) {
+    const sql = `SELECT * FROM city WHERE Population >= ?`;
+    const params = [ minPopulation ];
+    connection.query(sql, params, function(err, result) {
+        callback(result);
+    });   
+}
+
 module.exports = {
     getAllCities,
-    getCityByCountryCode
+    getCityByCountryCode,
+    getCityByPopulation
 }

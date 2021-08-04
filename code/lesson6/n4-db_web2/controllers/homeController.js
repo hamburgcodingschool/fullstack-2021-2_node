@@ -1,15 +1,24 @@
 const mysql = require("mysql2");
-const { getAllCities, getCityByCountryCode } = require("../db/city");
+const cityDB = require("../db/city");
 const connection = require("../db/connection");
 
 
 function homepage(req, res) {
     
     const countryCode = req.query.cc;
-    getCityByCountryCode(countryCode, function(result) {
+    cityDB.getCityByCountryCode(countryCode, function(result) {
         console.log(result);
         res.render("index.ejs", {result: result});
     });
 }
 
-module.exports = { homepage }
+function byPopulation(req, res) {
+    const minPop = req.query.minPop || 0;
+
+    cityDB.getCityByPopulation(minPop, function(result) {
+        console.log(result);
+        res.render("index.ejs", {result: result});
+    });
+}
+
+module.exports = { homepage, byPopulation }
