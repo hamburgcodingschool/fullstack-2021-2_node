@@ -1,4 +1,4 @@
-# {{ Course Name }}
+# NodeJS
 ## Full Stack Course - {{ Start Date }}
 
 ### ✏️ Homework
